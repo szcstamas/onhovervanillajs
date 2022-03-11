@@ -1,0 +1,115 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: rgb(244, 244, 255);
+    /* animation: bodycolor 6s linear infinite; */
+}
+
+h1 {
+
+    text-align: center;
+    margin: 2rem 0 0.5rem 0;
+}
+
+p {
+
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 1150px;
+    margin: 20px auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-container {
+
+    text-align: center;
+    transition: 0.2s;
+}
+
+.img-container img {
+
+    max-width: 400px;
+    transition: 0.2s;
+}
+
+.flex-container {
+
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.flex-container img {
+
+    max-width: 150px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 20px;
+}
+
+.flex-container img:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.192);
+}
+
+.circle {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(90deg, #f87b7b, #ffff54, #f56aee, #7590fc, #f573d6, #f87b7b);
+    background-size: 400%;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: 2s;
+
+    animation: colorchange 10s linear infinite;
+}
+
+@keyframes colorchange {
+
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+
+        background-position: 400%;
+    }
+}
+
+@keyframes bodycolor {
+    0% {
+        background-position: 0%;
+    }
+    
+    50% {
+
+        background-position: 400%;
+    }
+}
+
+    /* 100% {
+
+        background-position: 0% 50%;
+    } */

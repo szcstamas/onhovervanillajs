@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Onhover Effect</title>
+</head>
+
+<body>
+
+    <h1>BioTech termékeink</h1>
+    <p>HOVER ON ONE</p>
+    <div class="container">
+        <div class="img-container">
+            <img class="main-image" src="img/megaburner_transp.webp" alt="">
+        </div>
+
+        <div class="circle"></div>
+
+        <div class="flex-container">
+            <img class="flex-image" src="img/collagen_transp.webp" alt=""
+                onmouseover="imageChange('img/collagen_transp.webp');circleChange('#ffe14a')">
+            <img class="flex-image" src="img/megaburner_transp.webp" alt=""
+                onmouseover="imageChange('img/megaburner_transp.webp');circleChange('#b06bff')">
+            <img class="flex-image" src="img/fibercomplex_transp.webp" alt=""
+                onmouseover="imageChange('img/fibercomplex_transp.webp');circleChange('#70eb65')">
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
